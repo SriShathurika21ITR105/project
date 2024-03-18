@@ -1,0 +1,89 @@
+// /* Footer.css */
+// .footer {
+//     background-color: #333;
+//     color: #fff;
+//     padding: 20px;
+//     display: flex;
+//     justify-content: space-between;
+//     align-items: center;
+//   }
+  
+//   .left-column {
+//     flex: 1;
+//     text-align: left;
+//   }
+  
+//   .middle-column {
+//     flex: 2;
+//     text-align: center;
+//   }
+  
+//   .middle-column ul {
+//     list-style: none;
+//     padding: 0;
+//     margin: 0;
+//   }
+  
+//   .middle-column li {
+//     margin: 5px 10px;
+//     display: inline;
+//   }
+  
+//   .right-column {
+//     flex: 1;
+//     text-align: right;
+//   }
+  
+//   .right-column ul {
+//     list-style: none;
+//     padding: 0;
+//     margin: 0;
+//   }
+  
+//   .right-column li {
+//     margin: 5px 10px;
+//     display: inline;
+//   }
+  
+  
+/* Footer.css */
+.footer {
+  text-decoration: none;
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* ... Other styles ... */
+
+.right-column .dotted-list {
+  text-decoration: none;
+  list-style-type: none;
+  padding: 0;
+}
+
+.right-column .dotted-list li {
+  text-decoration: none;
+  margin: 5px 0;
+  padding-left: 15px;
+  position: relative;
+  color: #fff; /* Set the default color to white */
+  cursor: pointer; /* Add a pointer cursor on hover */
+  transition: color 0.3s; /* Smooth color transition */
+}
+
+.right-column .dotted-list li::before {
+  text-decoration: none;
+  content: '\2022'; /* Unicode character for a bullet (•) */
+  position: absolute;
+  left: 0;
+}
+
+/* Change the color to blue on hover */
+.right-column .dotted-list li:hover {
+  text-decoration: none;
+  color: #f3f3f3; /* Change the color to blue on hover */
+}

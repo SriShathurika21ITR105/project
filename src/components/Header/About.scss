@@ -1,0 +1,60 @@
+/* About.css */
+.about-page {
+    display: flex;
+    align-items: center;
+  }
+  
+  .left-column {
+    flex: 1;
+    padding: 60px;
+  }
+  
+  .left-column img {
+    flex: center ;
+    max-width: 50%;
+    height: 400px;
+    width: 600px;
+  }
+  
+  .right-column {
+    flex: 2;
+  }
+  
+  .right-column .text-container {
+    padding: 40px;
+    background-color: #f5f5f5;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .right-column h2 {
+    font-size: 24px;
+    color: #333;
+  }
+  
+  .right-column p {
+    font-size: 16px;
+    color: #666;
+  }
+  
+  /* Styles for the small column */
+  // .small-column {
+  //   flex: 1;
+  //   padding: 20px;
+  //   background-color: #f5f5f5;
+  //   border: 1px solid #ccc;
+  //   border-radius: 5px;
+  //   margin-left: 20px; /* Add some space between the columns */
+  // }
+  
+  // .small-column h3 {
+  //   font-size: 18px;
+  //   color: #333;
+  //   margin-bottom: 10px;
+  // }
+  
+  // .small-column p {
+  //   font-size: 14px;
+  //   color: #666;
+  // }
+  

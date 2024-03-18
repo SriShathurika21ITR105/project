@@ -1,0 +1,122 @@
+// .navbar {
+//   background-color: #333;
+//   padding: 10px 20px; /* Add padding to the navbar for spacing */
+//   display: flex;
+//   justify-content: flex-end; /* Align content to the right */
+  
+// }
+
+// .nav-list {
+//   list-style: none;
+//   padding: 0;
+//   margin: 0; /* Remove default margin from ul element */
+//   display: flex;
+// }
+
+// .nav-item {
+//   margin-left: 20px; /* Add margin to create space between items */
+// }
+
+// .nav-item:first-child {
+//   margin-left: 0; /* Remove margin from the first item to avoid extra space */
+// }
+
+// .nav-item a {
+//   text-decoration: none;
+//   color: #fff;
+// }
+// .nav-item1 {
+//   margin-left: 20px; /* Add margin to create space between items */
+//   text-decoration: solid;
+//   color:blue
+// }
+// .logo-container {
+//   display: flex;
+//   height:50px;
+//   width: fit-content;
+//   align-items: left; /* Vertically center the logo */
+// }
+
+// .logo {
+//   width: 20px; /* Adjust the width and height as needed */
+//   height: 20px;
+// }
+/* Base styles for the navbar */
+/* Base styles for the navbar */
+.navbar {
+    background-color: #333;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .logo-container {
+    display: flex;
+    align-items: center;
+    width: 10px;
+    height: 20px;
+  
+  }
+  
+  
+    /* Adjust the logo size to 50px by 50px */
+  .logo {
+    width: 20px;
+    height: 20px;
+  }
+  
+  
+  
+  .nav-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+  }
+  
+  .nav-item {
+    margin-left: 20px;
+  }
+  
+  .nav-item:first-child {
+    margin-left: 0;
+  }
+  
+  .nav-item a {
+    text-decoration: none;
+    color: #fff;
+  }
+  
+  /* Styles for the menu icon */
+  .menu-icon {
+    cursor: pointer;
+    display: none; /* Hide the menu icon by default */
+  }
+  
+  /* Responsive styles for smaller screens */
+  @media screen and (max-width: 768px) {
+    .menu-icon {
+      display: block; /* Display the menu icon on smaller screens */
+    }
+  
+    .nav-list {
+      flex-direction: column;
+    }
+  
+    .nav-item {
+      margin-left: 0;
+      margin-bottom: 10px;
+    }
+  
+    .nav-item:first-child {
+      margin-left: 0;
+    }
+  
+    /* Show/hide navigation links based on the 'open' class */
+    .open {
+      .nav-list {
+        display: flex;
+      }
+    }
+  }
+  

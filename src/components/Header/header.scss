@@ -1,0 +1,218 @@
+@import "../../vendors/mixins";
+@import "../../vendors/variables";
+
+
+header {
+    .mobile-nav {
+        overflow: hidden;
+        height: 0;
+        
+
+        @media(min-width: 922px) {
+            display: none;
+        }
+
+        li {
+            button {
+                display: flex;
+                width: 100%;
+                padding: 0 20px;
+                font-size: 16px;
+                line-height: 3;
+                border: 1px solid #dddddd;
+                text-decoration: none;
+                color: #3a3a3a;
+
+                &:hover {
+                    color: #0a0c0c;
+                }
+            }
+        }
+
+    }
+
+    .open-nav {
+        height: 200px;
+        
+    }
+
+    .header-content {
+        @include flexBetween;
+        padding: 14px 0;
+
+        @media(max-width: 922px) {
+            padding-bottom: 0 !important;
+        }
+
+        .header-left {
+            min-height: 70px;
+            display: flex;
+            align-items: center;
+
+            .login-button {
+                background-color: rgb(121, 121, 121);
+                text-decoration: none;
+                color: #131212;
+                padding: 10px;
+                font-size: 18px;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+                transition: background-color 0.3s;
+              }
+              .login-container {
+
+                width: 100%;
+                max-width: 400px;
+                margin: 0 auto;
+                padding: 20px;
+                background-color: rgb(8, 8, 8);
+                border: 1px solid rgb(6, 6, 6);
+                border-radius: 5px;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+              }
+              
+              .login-heading {
+                font-size: 24px;
+                text-align: center;
+                margin-bottom: 20px;
+                color: #333;
+              }
+              
+              .login-form {
+                display: flex;
+                flex-direction: column;
+              }
+              
+              .form-group {
+                margin-bottom: 20px;
+              }
+              
+              label {
+                font-size: 16px;
+                margin-bottom: 6px;
+                color: #fcf9f9;
+              }
+              
+              .input-field {
+                width: 50px;
+                padding: 10px;
+                font-size: 16px;
+                border: 1px solid #ccc;
+                border-radius: 5px;
+              }
+              
+              
+              .login-button:hover {
+                background-color: #0056b3;
+              }
+              
+              .login-info {
+                text-align: center;
+                margin-top: 20px;
+                color: #777;
+              }
+              
+              .login-info a {
+                color: #007bff;
+                text-decoration: none;
+              }
+              
+              .login-info a:hover {
+                text-decoration: underline;
+              }
+              
+                  
+
+            ul {
+                display: flex;
+                gap: 20px;
+
+                @media(max-width: 922px) {
+                    display: none;
+                }
+
+                li {
+                    a {
+                        text-decoration: none;
+                        color: #3a3a3a;
+                        
+
+                        &:hover {
+                            color: #eff4f6;
+                        }
+                    }
+                }
+            }
+
+            .logo-part {
+                @media(max-width: 544px) {
+                    max-width: 150px;
+                }
+
+                img {
+                    width: 100%;
+                }
+            }
+        }
+
+        .header-right {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+
+            p {
+                margin: 0;
+                color: $main-color;
+                font-weight: 600;
+            }
+
+            .cart {
+                position: relative;
+                
+                height: 24px;
+                width: 24px;
+
+                svg {
+                    @include imageCover;
+                    fill: $main-color;
+                }
+
+                p {
+                    position: absolute;
+                    right: -10px;
+                    top: -6px;
+                    background-color:#007bff;
+                    color: black;
+                    font-weight: bold;
+                    width: 18px;
+                    height: 18px;
+                    @include flexCenter;
+                    border-radius: 50%;
+                    font-size: 12px;
+                    
+                }
+            }
+
+            .hamburger-menu {
+                margin-left: 8px;
+
+                @media(min-width: 922px) {
+                    display: none;
+                }
+
+                button {
+                    background: transparent;
+                    border: 0;
+                    outline: 0;
+                    color: $main-color;
+
+                    svg {
+                        width: 20px;
+                        height: 20px;
+                    }
+                }
+            }
+        }
+    }
+}
